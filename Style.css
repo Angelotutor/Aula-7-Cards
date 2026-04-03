@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  width: 100%;
+  height: 100vh;
+  background-color: #434343;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card {
+  width: 30%;
+  height: 550px;
+}
+
+.imagem {
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  border-radius: 12px 12px 0 0;
+  box-shadow: 10px 10px 20px black;
+}
+
+.imagem-tanjiro {
+  background-image: url("assets/tajiro.webp");
+}
+
+.imagem-nezuko {
+  background-image: url("assets/nezuko.jpg");
+}
+
+.imagem-zenitsu {
+  background-image: url("assets/zenitsu.jpg");
+}
+
+.container-conteudo {
+  background-color: white;
+  padding: 18px;
+  border-radius: 0 0 12px 12px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 10px 10px 20px black;
+}
+
+h1 {
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+
+.titulo-card1 {
+  color: #227dd8;
+}
+
+.titulo-card2 {
+  color: #d822b7;
+}
+
+.titulo-card3 {
+  color: #d89822;
+}
+
+p {
+  text-align: justify;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+button {
+  text-transform: uppercase;
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 15px 0px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.btn-card1 {
+  background-color: #227dd8;
+}
+
+.btn-card2 {
+  background-color: #d822b7;
+}
+
+.btn-card3 {
+  background-color: #d89822;
+}
+
+@media (max-widht: 1440px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
+    padding: 80px 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .card {
+    width: -80px;
+  }
+}
+
+@media (max-widht: 560px) {
+  .imagem-nezuko {
+    background-position: -80px;
+  }
+}
+
+@media (max-widht: 560px) {
+  .imagem-zenitsu {
+    background-position: -80px;
+  }
+}
